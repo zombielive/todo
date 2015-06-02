@@ -2,6 +2,8 @@
 body{margin: 0;padding: 0;font-size: 14px;font-family: Segoe UI Light,"Microsoft YaHei";background: #eee;}
 ul{list-style-type: none;padding: 0;}
 li{margin: 0;}
+button{color: #fff;background: #44b549;padding: 0 22px;border:0;margin-right: 2em;height: 32px;line-height: 32px;display: inline-block;font-family: Segoe UI Light,"Microsoft YaHei";cursor: pointer;}
+button:hover{background: #2f9833;}
 .container{max-width: 900px;margin: auto;padding: 20px;}
 .clearfix::after{content: "";clear: both;display: block;}
 /*以上是初始化css*/
@@ -14,14 +16,15 @@ header{width: 100%;background: #44b549;color: #fff}
 section{max-width: 900px;background: #fff;margin: 20px auto;}
 .bar{width: 100%;border-bottom: 1px solid #eee;font-size: 16px;}
 .lotBar{padding: 10px 0;}
+.lotBtn{float: right;}
 .shiftActive{border-bottom: 4px solid #44b549;}
-.shiftCell{width: 50%;box-sizing:border-box;float: left;padding: 10px;}
+.shiftCell{width: 50%;box-sizing:border-box;float: left;padding: 10px;cursor: pointer;}
 #shiftLeft{text-align: right;}
 #shiftRight{text-align: left;}
 .checkIt{float: left;margin: auto 10px;}
 #detail li{border-bottom: 2px solid #eee;position: relative;padding: 20px 0;}
 .target{overflow: hidden;width: 70%;line-height: 1.6;}
-.target::after{content: "2010-10-10";padding-left: 16px;font-size: 12px;line-height: 2;color: #aaa;display: block;background-image: url(./iconfont-countdown.png);background-repeat:no-repeat;background-position: center left;}
+.target::after{content: "2010-10-10";padding-left: 20px;font-size: 12px;line-height: 2;color: #aaa;display: block;background-image: url(./iconfont-countdown.png);background-repeat:no-repeat;background-position: center left;}
 .iconBar{float: right;width: 20%;position: absolute;top: 50%;right: 0;margin-top: -8px;display: table;}
 .iconBar a{display: table-cell;height: 16px;}
 .completeIcon{background: url(./iconfont-success.png) center center no-repeat;}
