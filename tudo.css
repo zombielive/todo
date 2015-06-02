@@ -21,6 +21,6 @@ section{max-width: 900px;background: #fff;margin: 20px auto;}
 #detail li{border-bottom: 2px solid #eee;position: relative;padding: 20px 0;}
 .target{overflow: hidden;width: 70%;line-height: 1.6;}
 .target::after{content: "2010-10-10";padding-left: 16px;font-size: 12px;line-height: 2;color: #aaa;display: block;background-image: url(./iconfont-countdown.png);background-repeat:no-repeat;background-position: center left;}
-.icoBar{float: right;width: 20%;position: absolute;top: 50%;right: 0;margin-top: -16px;display: table;}
+.icoBar{float: right;width: 20%;position: absolute;top: 50%;right: 0;margin-top: -8px;display: table;}
 .icoBar span{display: table-cell;}
 /*以上是内容*/
