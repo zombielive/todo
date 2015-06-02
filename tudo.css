@@ -6,7 +6,7 @@ li{margin: 0;}
 .clearfix::after{content: "";clear: both;display: block;}
 /*以上是初始化css*/
 /*头部*/
-header{width: 100%;background: #ffcc2f;}
+header{width: 100%;background: #44b549;color: #fff}
 #logo{width: 160px;height: 160px;background: #fff;float: left;margin-right: 2em}
 #addInputer{width: 100%;margin-top: 40px;font-size: 18px;padding: 12px 20px;box-sizing:border-box;background-image: url(./iconfont-add.png);background-repeat:no-repeat;background-position: center right;}
 /*以上是头部*/
