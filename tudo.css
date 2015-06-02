@@ -1,0 +1,26 @@
+/*初始化css*/
+body{margin: 0;padding: 0;font-size: 14px;font-family: Segoe UI Light,"Microsoft YaHei";background: #eee;}
+ul{list-style-type: none;padding: 0;}
+li{margin: 0;}
+.container{max-width: 900px;margin: auto;padding: 20px;}
+.clearfix::after{content: "";clear: both;display: block;}
+/*以上是初始化css*/
+/*头部*/
+header{width: 100%;background: #ffcc2f;}
+#logo{width: 160px;height: 160px;background: #fff;float: left;margin-right: 2em}
+#addInputer{width: 100%;margin-top: 40px;font-size: 18px;padding: 12px 20px;box-sizing:border-box;background-image: url(./iconfont-add.png);background-repeat:no-repeat;background-position: center right;}
+/*以上是头部*/
+/*内容*/
+section{max-width: 900px;background: #fff;margin: 20px auto;}
+.bar{width: 100%;border-bottom: 2px solid #eee;font-size: 16px;}
+.lotBar{padding: 10px 0;}
+.shiftCell{width: 50%;box-sizing:border-box;float: left;padding: 10px;}
+#shiftLeft{text-align: right;}
+#shiftRight{text-align: left;}
+.checkIt{float: left;margin: auto 10px;}
+#detail li{border-bottom: 2px solid #eee;position: relative;padding: 20px 0;}
+.target{overflow: hidden;width: 70%;line-height: 1.6;}
+.target::after{content: "2010-10-10";padding-left: 16px;font-size: 12px;line-height: 2;color: #aaa;display: block;background-image: url(./iconfont-countdown.png);background-repeat:no-repeat;background-position: center left;}
+.icoBar{float: right;width: 20%;position: absolute;top: 50%;right: 0;margin-top: -16px;display: table;}
+.icoBar span{display: table-cell;}
+/*以上是内容*/
