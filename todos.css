@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Segoe UI Light,"Microsoft YaHei";
+  background: #eee;
+}
+header {
+  width: 100%;
+  background: #44b549;
+  color: #fff;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+#logo {
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  float: left;
+  margin-right: 2em;
+}
+#addInputer {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 18px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-image: url(./img/iconfont-add.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+section {
+    background: none repeat scroll 0 0 #fff;
+    margin: 20px auto;
+    max-width: 900px;
+}
+.bar {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+#shiftLeft {
+  text-align: right;
+  color:#ee4e39;
+}
+#shiftRight {
+  text-align: left;
+}
+.shiftCell {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+}
+.shiftActive {
+  border-bottom: 4px solid #44b549;
+}
+.lotBar {
+  padding: 10px 0px;
+  padding-left:20px;
+}
+.lotBtn {
+  float: right;
+}
+button {
+  color: #fff;
+  background: #44b549;
+  padding: 0 22px;
+  border: 0;
+  margin-right: 2em;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  font-family: Segoe UI Light,"Microsoft YaHei";
+  cursor: pointer;
+}
+button:hover {
+    background: none repeat scroll 0 0 #2f9833;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+.checkIt {
+  float: left;
+  margin: auto 10px;
+}
+#detail li {
+  border-bottom: 2px solid #eee;
+  position: relative;
+  padding: 20px 0;
+  list-style:none;
+}
+.iconBar {
+  float: right;
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -8px;
+  display: table;
+}
+.iconBar a {
+  display: table-cell;
+  height: 16px;
+}
+.completeIcon {
+  background: url(./img/iconfont-success.png) center center no-repeat;
+}
+.deleteIcon {
+  background: url(./img/iconfont-delete.png) center center no-repeat;
+}
+.editIcon {
+  background: url(./img/iconfont-edit.png) center center no-repeat;
+}
+
+#complete{
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background:#fff;
+  display:none;
+}
+#complete li {
+  border-bottom: 2px solid #eee;
+  position: relative;
+  padding: 20px 0;
+  list-style:none;
+}
