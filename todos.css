@@ -10,6 +10,10 @@ header {
   background: #44b549;
   color: #fff;
 }
+input {
+  border: 0;
+  margin: 0;
+}
 .container {
   max-width: 900px;
   margin: auto;
@@ -22,15 +26,35 @@ header {
   float: left;
   margin-right: 2em;
 }
-#addInputer {
-  width: 100%;
+.inputer {
   margin-top: 40px;
   font-size: 18px;
-  padding: 12px 20px;
+  float: left;
   box-sizing: border-box;
-  background-image: url(./img/iconfont-add.png);
+}
+#addInputer {
+  width: 70%;
+  padding: 12px 0px 12px 36px;
+  border-right: 1px solid #2f9833;
+  background-image: url(./img/iconfont-form.png);
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center left;
+}
+#timeInputer {
+  width: 20%;
+  padding: 12px 0px 12px 36px;
+  background-image: url(./img/iconfont-countdown32.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+#insert {
+  width: 10%;
+  height: 46px;
+  margin-right: 0;
+  border: 1px solid #fff;
+}
+.clear {
+  clear: both;
 }
 .clearfix::after {
   content: "";
