@@ -123,7 +123,7 @@ ul{
   margin: auto 10px;
 }
 #detail li {
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
   position: relative;
   padding: 20px 0;
   list-style:none;
