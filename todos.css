@@ -34,11 +34,8 @@ input {
 }
 #addInputer {
   width: 70%;
-  padding: 12px 0px 12px 36px;
+  padding: 12px;
   border-right: 1px solid #2f9833;
-  background-image: url(./img/iconfont-form.png);
-  background-repeat: no-repeat;
-  background-position: center left;
 }
 #timeInputer {
   width: 20%;
