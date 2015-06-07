@@ -1,98 +1,263 @@
+/*@group initialization styles
+---------------------------------------------------------------------------------*/
+* { 
+  border:0; 
+  margin:0; 
+  padding:0; 
+}
 body{
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: Segoe UI Light,"Microsoft YaHei";
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #eee;
 }
-header {
-  width: 100%;
-  background: #44b549;
-  color: #fff;
+li{ 
+  list-style:none; 
 }
-input {
-  border: 0;
-  margin: 0;
+a{ 
+  text-decoration: none; 
+  color:#444; 
 }
+input,button{
+  outline: none;
+}
+h1,h2{
+  margin: 0.6em 0;
+}
+/*@group common styles
+---------------------------------------------------------------------------------*/
 .container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
-}
-#logo {
-  width: 160px;
-  height: 160px;
-  background: #fff;
-  float: left;
-  margin-right: 2em;
-}
-.inputer {
-  margin-top: 40px;
-  font-size: 18px;
-  float: left;
-  box-sizing: border-box;
-}
-#addInputer {
-  width: 70%;
-  padding: 12px;
-  border-right: 1px solid #2f9833;
-}
-#timeInputer {
-  width: 20%;
-  padding: 12px 0px 12px 36px;
-  background-image: url(./img/iconfont-countdown32.png);
-  background-repeat: no-repeat;
-  background-position: center left;
-}
-#insert {
-  width: 10%;
-  height: 46px;
-  margin-right: 0;
-  border: 1px solid #fff;
-}
-.clear {
-  clear: both;
+  position: relative;
 }
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
+  content:'.';
+  visibility:hidden;
+  height:0;
+  display:block;
+  clear:both;
 }
+/*@group section header
+---------------------------------------------------------------------------------*/
+header {
+  width: 100%;
+  background: #44b549;
+  color: #fff;
+  padding:20px 0;
+}
+header .container{
+  height: 200px;
+}
+#logo{
+  width: 160px;
+  height: 160px;
+  float: left;
+  margin-right: 2em;
+  background-position: center center;
+  background-image: url(./imgs/timer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#insert{
+  height: 38px;
+  width: 110px;
+  line-height: 38px;
+  border: 1px solid #fff;
+  display: block;
+  float: left;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  box-sizing: content-box;
+  font-size: 22px;
+  border-left: 1px solid #ddd;
+}
+.createTask{
+  position: absolute;
+  bottom: 0px;
+}
+#taskContent{
+  width: 600px;
+  font-size: 20px;
+  height: 1em;
+  padding: 10px 10px;
+  display: block;
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+#taskTime{
+  width: 139px;
+  font-size: 20px;
+  height: 1em;
+  padding: 10px 10px;
+  display: block;
+  float: left;
+}
+
+.datebox{
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.4);
+  top: 55px;
+  z-index: 99;
+  right: -50px;
+  display: none;
+}
+.datebox .arrow{
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #fff;
+  position: absolute;
+  top: -5px;
+  left: 240px;
+}
+.datebox select{
+  box-sizing: content-box;
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.datebox button{
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  background-color:#44b549;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff; 
+  position: absolute;
+  bottom: 10px;
+  left: 210px;
+}
+.datebox span{
+  position: absolute;
+  top: 20px;
+  height: 40px;
+  display: inline-block;
+  width: 20px;
+  color: #000;
+  font-size: 20px;
+  left: 0;
+}
+.datebox .year_text{
+  left: 155px;
+}
+.datebox .month_text{
+  left: 300px;
+}
+.datebox .day_text{
+  left: 450px;
+}
+/*@group section content
+---------------------------------------------------------------------------------*/
 section {
     background: none repeat scroll 0 0 #fff;
     margin: 20px auto;
     max-width: 900px;
 }
-.bar {
-  width: 100%;
+nav{
+  height: 40px;
   border-bottom: 1px solid #eee;
-  font-size: 16px;
 }
-#shiftLeft {
-  text-align: right;
-  color:#ee4e39;
-}
-#shiftRight {
-  text-align: left;
-}
-.shiftCell {
-  width: 50%;
-  box-sizing: border-box;
+nav li{
+  display: block;
   float: left;
-  padding: 10px;
+  width: 420px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 40px;
+}
+nav li.active{
+  border-bottom: 3px solid #44b549;
+  color: #ee4e39;
+}
+nav li.left{
+  text-align: right;
+  margin-right: 20px;
+}
+
+#done{
+  display: none;
+}
+
+.list li{
+  margin-top: 5px;
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.list .time{
+  position: absolute;
+  right: 160px;
+  height: 40px;
+  line-height: 40px;
+  top: 0;
+}
+
+.list label{
+  display: block;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: left;
   cursor: pointer;
 }
-.shiftActive {
-  border-bottom: 4px solid #44b549;
+.btns {
+  position: absolute;
+  right: 0px;
+  top: 0px; 
 }
-.lotBar {
-  padding: 10px 0px;
-  padding-left:20px;
+.btns a {
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 40px;
 }
-.lotBtn {
-  float: right;
+.completeBtn {
+  background-position: center center;
+  background-color: #fff;
+  background-image: url(./imgs/iconfont-success.png);
+  background-repeat: no-repeat;
 }
-button {
+.deleteBtn {
+  background-position: center center;
+  background-color: #fff;
+  background-image: url(./imgs/iconfont-delete.png);
+  background-repeat: no-repeat;
+}
+.editBtn {
+  background-position: center center;
+  background-color: #fff;
+  background-image: url(./imgs/iconfont-edit.png);
+  background-repeat: no-repeat;
+}
+#done .completeBtn,#done .editBtn{
+  display: none;
+}
+.operate{
+  height: 60px;
+  position: relative;
+}
+.operate button{
   color: #fff;
   background: #44b549;
   padding: 0 22px;
@@ -100,67 +265,25 @@ button {
   margin-right: 2em;
   height: 32px;
   line-height: 32px;
-  display: inline-block;
+  display:block;
   font-family: Segoe UI Light,"Microsoft YaHei";
+  border-radius: 5px;
   cursor: pointer;
-}
-button:hover {
-    background: none repeat scroll 0 0 #2f9833;
-}
-ul{
-  list-style-type: none;
-  padding: 0;
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
-}
-.checkIt {
-  float: left;
-  margin: auto 10px;
-}
-#detail li {
-  border-bottom: 1px solid #eee;
-  position: relative;
-  padding: 20px 0;
-  list-style:none;
-}
-.iconBar {
+  margin-top: 20px;
   float: right;
-  width: 20%;
+}
+.operate label{
   position: absolute;
-  top: 50%;
-  right: 0;
-  margin-top: -8px;
-  display: table;
+  top: 30px;
+  left: 0;
 }
-.iconBar a {
-  display: table-cell;
-  height: 16px;
+.operate label.no{
+  left: 60px;
 }
-.completeIcon {
-  background: url(./img/iconfont-success.png) center center no-repeat;
-}
-.deleteIcon {
-  background: url(./img/iconfont-delete.png) center center no-repeat;
-}
-.editIcon {
-  background: url(./img/iconfont-edit.png) center center no-repeat;
-}
-
-#complete{
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  background:#fff;
-  display:none;
-}
-#complete li {
-  border-bottom: 2px solid #eee;
-  position: relative;
-  padding: 20px 0;
-  list-style:none;
+/*@group section footer
+---------------------------------------------------------------------------------*/
+footer{
+  width: 100%;
+  text-align: center;
+  font-family: 'Microsoft YAHEI' ,"Arial","Hiragino Sans GB", "SimSun",\5b8b\4f53, "Georgia", "serif";
 }
